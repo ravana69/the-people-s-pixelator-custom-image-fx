@@ -1,0 +1,59 @@
+<div id="controls">
+  <div style="text-align:center">
+    <h1>The People's Pixelator</h1>
+    <label style="display:block" class='instructions'>Choose an image file to get started.</label>
+  </div>
+  <input type="file" name="image" id="image">
+
+  <div class="container"><label for="pSize">Pixel Size to analyze:</label><input type="range" step="1" min="1" max="15" value="3" id="pSize">
+    
+     <span class="instructions">*smaller size = more detail. Can be set as low as 1px, will take a while to render.</span>
+  </div>
+  
+  <div class="container">
+    <label for="scale">Result Scale (% of original):</label><input type="range" step=".1" min=".1" max="5" value=".9" id="scale">
+  </div> 
+  
+  <div class="container">
+    <label for="palette">Color Scheme:</label><select id="palette">
+    <option value="politico" selected>Politico</option>
+    <option value="vapor">Vapor Wave</option>
+    <option value="Warhol">Warhol</option>
+    <option value="Che Guevara">Che Guevara</option>
+    <option value="camo">Camo</option>
+    
+    </select>
+  </div>
+  <div class="container">
+    <label for="darkColor">Dark:</label><input type="color" value="#03253e" id="darkColor">
+    <label for="redColor">Trim #1:</label><input type="color" value="#ea1c26" id="redColor">
+    <label for="blueColor">Trim #2:</label><input type="color" value="#5092a0" id="blueColor">
+    <label for="lightColor">Light:</label><input type="color" value="#f9de8d" id="lightColor">
+    <label for="strokeColor">Stroke (optional):</label><input type="color" value="#03253e" id="strokeColor">
+
+  </div>
+  
+  <div class="container">
+    <label for="dark">Dark Color level:</label><input type="range" min="0" max="256" value="80" step="1" id="dark"/>
+    
+  
+  <label for="bright">Light Color level:</label><input type="range" min="0" max="256" value="90" step="1" id="bright"></div>  
+
+   <div class="container">
+      
+    <label for="colorMix">Trim #1/Trim #2:</label><input type="range" min="0" max="1" step=".1" value=".5" id="colorMix"/>
+     <label for="invert">Invert Trim:</label><input type="checkbox" id="invert"/>
+   </div> 
+
+
+  <div class="container">
+    <label for="dots">Dots:</label><input type="checkbox" id="dots"/>
+    <label for="stroke">Stroke:</label><input type="checkbox" id="stroke"/>
+    <label for="lineWidth">Stroke Width:</label><input type="range" id="lineWidth" min="0" max=".5" step=".1" value=".4"/>
+  </div>   
+  
+</div>
+<div class="container">
+  <label for="hide">Hide Controls</label><input type="checkbox" id="hide"/>
+</div>
+<canvas id="c"></canvas>

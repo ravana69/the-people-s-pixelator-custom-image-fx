@@ -1,0 +1,25 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color:#efefef;
+}
+canvas {
+  display:block;
+}
+#controls {
+  min-width:820px;
+}
+ input {
+ margin-right:15px;
+}
+.container {
+  padding:1px;
+}
+h1 {
+  font-size:1.5em;
+  padding:0px;
+}
+.instructions {
+  display:inline;
+  font-size:80%;
+  font-style:italic; 
+}
